@@ -313,7 +313,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-      share: true
+      # share: true
 
   # _docs
   - scope:
@@ -322,3 +322,8 @@ defaults:
     values:
       sidebar:
         nav: "docs"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
