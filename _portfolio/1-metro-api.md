@@ -1,5 +1,7 @@
 ---
 title: "API-EstadoServicoML"
+techs: 
+  - Java
 ---
 
 **TODO**

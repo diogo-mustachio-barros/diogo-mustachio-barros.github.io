@@ -1,5 +1,8 @@
 ---
 title: "Hack your calculator @ Ciencias"
+techs:
+  - TI-BASIC
+  - Jekyll
 ---
 
 **TODO**

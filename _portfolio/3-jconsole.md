@@ -1,5 +1,8 @@
 ---
 title: "JConsole"
+techs:
+  - Java
+  - Xtext
 ---
 
 **TODO**

@@ -1,5 +1,7 @@
 ---
 title: "FreeST Website"
+techs:
+  - Jekyll
 ---
 
 **TODO**

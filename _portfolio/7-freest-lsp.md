@@ -1,5 +1,8 @@
 ---
 title: "FreeST VSCode LSP Extension"
+techs:
+  - Haskell
+  - TypeScript
 ---
 
 **TODO**

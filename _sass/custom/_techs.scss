@@ -1,0 +1,37 @@
+// Colours
+$java-color: #f89820  !default; 
+$python-color: #ffd43b !default;
+$haskell-color: #634f88 !default;
+$typescript-color: #2d79c7 !default;
+$jekyll-color: #cc0000 !default;
+$xtext-color: #8f87a1 !default;
+$raspberry-pi: #c7053d !default;
+
+// Colour classes
+.bc-java {
+    background-color: $java-color;
+}
+
+.bc-python {
+    background-color: $python-color;
+}
+
+.bc-haskell {
+    background-color: $haskell-color;
+}
+
+.bc-typescript {
+    background-color: $typescript-color;
+}
+
+.bc-jekyll {
+    background-color: $jekyll-color;
+}
+
+.bc-xtext {
+    background-color: $xtext-color;
+}
+
+.bc-raspberry-pi {
+    background-color: $raspberry-pi;
+}

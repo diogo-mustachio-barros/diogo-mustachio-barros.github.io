@@ -1,5 +1,7 @@
 ---
 title: "FreeST Language VSCode Extension"
+techs:
+  - TypeScript
 ---
 
 **TODO**
