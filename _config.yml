@@ -110,7 +110,9 @@ author:
   name             : "Diogo Barros"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   home             : /about/ # avatar href points to 'About' page
-  bio              : "Overthinker and meme-lover."
+  bio              : >-
+    Overthinker and meme-lover. 
+    Passionate about programming languages and curious of distributed systems.
   location         : "Lisbon, Portugal"
   email            : "diogofpbarros@gmail.com"
   links:
