@@ -74,6 +74,8 @@ During his MsC he also was a Monitor for practical classes in Programming I (fir
     Student Volunteer, and presented a [*preview* of his thesis][inforum-paper] at 
     [INForum Informatics Symposium 2022][inforum].
 
+{% include figure image_path="/assets/images/inforum.jpg" alt="inforum" caption="Inforum Informatics Symposium." %} 
+
 
 
 <!-- Education - Thesis -->
@@ -110,4 +112,4 @@ During this time, he was also responsible for the Domain Languages subject for h
 [inforum]: https://inforum.org.pt/2022/index.html
 [inforum-paper]: https://inforum.org.pt/2022/sites/default/files/2022-09/Actas_INForum.pdf#section.2.3
 <!-- [thesis]: TBD -->
-[freest-website]: freest-lang.github.io
+[freest-website]: https://freest-lang.github.io
