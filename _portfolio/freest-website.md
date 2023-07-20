@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 5
 title: "FreeST Website"
 techs:
   - Jekyll
@@ -7,7 +9,8 @@ toc: true
 repo: https://github.com/freest-lang/freest-lang.github.io
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

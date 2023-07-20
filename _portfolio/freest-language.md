@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 6
 title: "FreeST Language VSCode Extension"
 techs:
   - TypeScript
@@ -7,7 +9,8 @@ toc: true
 repo: https://github.com/freest-lang/freest-language
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

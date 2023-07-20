@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 2
 title: "Raspberry Pi Buzz Quiz"
 techs: 
   - Python
@@ -8,7 +10,8 @@ toc: true
 repo: https://github.com/diogo-mustachio-barros/rpi-buzz-quizz
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

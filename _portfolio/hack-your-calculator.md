@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 4
 title: "Hack your calculator @ Ciencias"
 techs:
   - TI-BASIC
@@ -8,7 +10,8 @@ toc: true
 repo: https://github.com/hack-your-calculator/hack-your-calculator.github.io
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

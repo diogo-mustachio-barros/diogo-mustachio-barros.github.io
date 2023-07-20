@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 3
 title: "JConsole"
 techs:
   - Java
@@ -8,7 +10,8 @@ toc: true
 repo: https://gitlab.com/diogofpbarros/jconsole
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

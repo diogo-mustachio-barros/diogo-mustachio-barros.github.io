@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 7
 title: "FreeST VSCode LSP Extension"
 techs:
   - Haskell
@@ -10,7 +12,8 @@ repos:
   - https://github.com/freest-lang/freest-lsp-server
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 

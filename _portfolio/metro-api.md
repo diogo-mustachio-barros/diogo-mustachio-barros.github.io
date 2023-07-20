@@ -1,4 +1,6 @@
 ---
+# hidden: true
+number: 1
 title: "API-EstadoServicoML"
 techs: 
   - Java
@@ -7,7 +9,8 @@ toc: true
 repo: https://gitlab.com/diogofpbarros/api-estadoservicoml
 ---
 
-## Abstract
+<!-- ## Abstract -->
+**TODO**
 
 ## Motivation
 
