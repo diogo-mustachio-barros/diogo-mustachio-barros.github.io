@@ -1,0 +1,3 @@
+{%- for tech in include.techs -%}
+    <a class="tag bc-{{ tech | downcase | slugify }}">{{ tech }}</a>
+{%- endfor -%}

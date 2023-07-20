@@ -25,9 +25,7 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-    {%- for tech in post.techs -%}
-      <a class="btn btn--info btn--small bc-{{ tech | downcase | slugify }}" style="padding: 0.25em 0.5em; margin: 0.25em;">{{ tech }}</a>
-    {%- endfor -%}
+    {% include tech-tags.html techs=post.techs %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
