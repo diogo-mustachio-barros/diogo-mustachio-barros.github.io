@@ -4,6 +4,7 @@ techs:
   - Java
 status: inactive
 toc: true
+repo: https://gitlab.com/diogofpbarros/api-estadoservicoml
 ---
 
 ## Abstract
@@ -17,6 +18,3 @@ toc: true
 ## Demo
 
 ## How to use
-
-
-link: [repo](https://gitlab.com/diogofpbarros/api-estadoservicoml)

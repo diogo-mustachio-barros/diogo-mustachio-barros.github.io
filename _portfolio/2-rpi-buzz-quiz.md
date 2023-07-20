@@ -5,6 +5,7 @@ techs:
   - Raspberry Pi
 status: inactive
 toc: true
+repo: https://github.com/diogo-mustachio-barros/rpi-buzz-quizz
 ---
 
 ## Abstract
@@ -18,5 +19,3 @@ toc: true
 ## Demo
 
 ## How to use
-
-link: [repo](https://github.com/diogo-mustachio-barros/rpi-buzz-quizz)

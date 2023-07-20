@@ -4,6 +4,7 @@ techs:
   - Jekyll
 status: active
 toc: true
+repo: https://github.com/freest-lang/freest-lang.github.io
 ---
 
 ## Abstract
@@ -17,6 +18,3 @@ toc: true
 ## Demo
 
 ## How to use
-
-
-link: [repo](https://github.com/freest-lang/freest-lang.github.io)

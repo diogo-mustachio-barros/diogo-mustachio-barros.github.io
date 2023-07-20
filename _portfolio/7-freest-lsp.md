@@ -5,6 +5,9 @@ techs:
   - TypeScript
 status: active
 toc: true
+repos: 
+  - https://github.com/freest-lang/freest-lsp
+  - https://github.com/freest-lang/freest-lsp-server
 ---
 
 ## Abstract
@@ -18,6 +21,3 @@ toc: true
 ## Demo
 
 ## How to use
-
-
-link: [extension](https://github.com/freest-lang/freest-lsp) and [backend](https://github.com/freest-lang/freest-lsp-server)

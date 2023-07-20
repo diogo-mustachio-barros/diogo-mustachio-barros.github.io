@@ -5,6 +5,7 @@ techs:
   - Jekyll
 status: complete
 toc: true
+repo: https://github.com/hack-your-calculator/hack-your-calculator.github.io
 ---
 
 ## Abstract
@@ -18,7 +19,3 @@ toc: true
 ## Demo
 
 ## How to use
-
-
-link: [repo](https://github.com/hack-your-calculator/hack-your-calculator.github.io)
-

@@ -43,12 +43,30 @@ layout: default
       {% endunless %}
       
       {% if page.techs %}
-        <section style="margin-bottom: 0.5em;">
-          <b>
-            Tech used: 
-            {% include tech-tags.html techs=page.techs %}
-          </b>
-        </section>
+      <section style="margin-bottom: 0.5em;">
+        <b>
+          Tech used: 
+          {% include tech-tags.html techs=page.techs %}
+        </b>
+      </section>
+      {% endif %}
+
+      {% if page.repo %}
+      <b>
+        Repository: <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
+      </b>
+      {% endif %}
+
+      {% if page.repos %}
+      <b>
+        Repositories: 
+        <ul style="margin: 0.5em;">
+          {% for repo in page.repos %}
+          <li><a href="{{ repo }}">{{ repo | remove:'https://' }}</a></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
+      </b>
       {% endif %}
 
       <section class="page__content e-content" itemprop="text">
