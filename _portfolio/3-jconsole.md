@@ -3,6 +3,7 @@ title: "JConsole"
 techs:
   - Java
   - Xtext
+status: inactive
 ---
 
 **TODO**

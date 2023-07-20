@@ -2,6 +2,7 @@
 title: "API-EstadoServicoML"
 techs: 
   - Java
+status: inactive
 ---
 
 **TODO**

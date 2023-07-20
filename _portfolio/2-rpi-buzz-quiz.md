@@ -3,6 +3,7 @@ title: "Raspberry Pi Buzz Quiz"
 techs: 
   - Python
   - Raspberry Pi
+status: inactive
 ---
 
 **TODO**

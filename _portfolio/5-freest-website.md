@@ -2,6 +2,7 @@
 title: "FreeST Website"
 techs:
   - Jekyll
+status: active
 ---
 
 **TODO**

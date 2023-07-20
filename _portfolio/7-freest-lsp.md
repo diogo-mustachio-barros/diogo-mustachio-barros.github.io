@@ -3,6 +3,7 @@ title: "FreeST VSCode LSP Extension"
 techs:
   - Haskell
   - TypeScript
+status: active
 ---
 
 **TODO**
