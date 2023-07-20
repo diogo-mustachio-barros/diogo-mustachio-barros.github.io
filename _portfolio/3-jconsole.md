@@ -4,8 +4,20 @@ techs:
   - Java
   - Xtext
 status: inactive
+toc: true
 ---
 
-**TODO**
+## Abstract
+
+## Motivation
+
+## Design
+
+## Implementation
+
+## Demo
+
+## How to use
+
 
 link: [repo](https://gitlab.com/diogofpbarros/jconsole)
