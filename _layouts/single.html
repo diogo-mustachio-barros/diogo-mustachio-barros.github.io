@@ -42,9 +42,14 @@ layout: default
         </header>
       {% endunless %}
       
-      <section style="margin-bottom: 0.5em;">
-        {% include tech-tags.html techs=page.techs %}
-      </section>
+      {% if page.techs %}
+        <section style="margin-bottom: 0.5em;">
+          <b>
+            Tech used: 
+            {% include tech-tags.html techs=page.techs %}
+          </b>
+        </section>
+      {% endif %}
 
       <section class="page__content e-content" itemprop="text">
         {% if page.toc %}
