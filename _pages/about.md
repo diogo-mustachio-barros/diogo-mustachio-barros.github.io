@@ -99,7 +99,8 @@ After his MsC, Diogo continued in LASIGE working on FreeST creating several tool
     A link between FreeST and distributed systems is in the works as an eventual source of ideas
     for further improvements.
 
-During this time, he was also responsible for the Domain Languages subject for half a semester.
+During this time, he was also responsible for lecturing Domain Languages, a MsC subject, for half 
+    a semester.
 
 <!-- TODO: link these projects -->
 
