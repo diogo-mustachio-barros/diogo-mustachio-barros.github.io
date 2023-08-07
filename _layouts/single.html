@@ -52,9 +52,11 @@ layout: default
       {% endif %}
 
       {% if page.repo %}
-      <b>
-        Repository: <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
-      </b>
+      <section style="margin-bottom: 0.5em;">
+        <b>
+          Repository: <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
+        </b>
+      </section>
       {% endif %}
 
       {% if page.repos %}
@@ -69,7 +71,7 @@ layout: default
       </b>
       {% endif %}
 
-      <section class="page__content e-content" itemprop="text">
+      <section class="page__content e-content" itemprop="text" style="margin-top: 1em;">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
