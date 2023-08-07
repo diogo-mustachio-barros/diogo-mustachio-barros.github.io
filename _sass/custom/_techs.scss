@@ -37,3 +37,7 @@ $raspberry-pi: #c7053d !default;
 .bc-raspberry-pi {
     background-color: $raspberry-pi;
 }
+
+.bc-maven {
+    background: linear-gradient(90deg, rgba(245,153,30,1) 10%, rgba(225,91,39,1) 35%, rgba(202,26,52,1) 65%, rgba(131,34,122,1) 90%);
+}
