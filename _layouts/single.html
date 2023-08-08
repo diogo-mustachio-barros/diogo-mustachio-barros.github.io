@@ -54,7 +54,7 @@ layout: default
       {% if page.repo %}
       <section style="margin-bottom: 0.5em;">
         <b>
-          Repository: <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
+          Repository: <a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer">{{ page.repo | remove:'https://' }}</a>
         </b>
       </section>
       {% endif %}
@@ -64,10 +64,9 @@ layout: default
         Repositories: 
         <ul style="margin: 0.5em;">
           {% for repo in page.repos %}
-          <li><a href="{{ repo }}">{{ repo | remove:'https://' }}</a></li>
+          <li><a href="{{ repo }}" target="_blank" rel="noopener noreferrer">{{ repo | remove:'https://' }}</a></li>
           {% endfor %}
         </ul>
-        <a href="{{ page.repo }}">{{ page.repo | remove:'https://' }}</a>
       </b>
       {% endif %}
 
