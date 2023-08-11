@@ -1,6 +1,6 @@
 ---
 # hidden: true
-number: 6
+number: -6
 title: "FreeST Language VSCode Extension"
 techs:
   - TypeScript

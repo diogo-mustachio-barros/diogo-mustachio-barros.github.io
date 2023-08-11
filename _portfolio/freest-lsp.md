@@ -1,6 +1,6 @@
 ---
 # hidden: true
-number: 7
+number: -7
 title: "FreeST VSCode LSP Extension"
 techs:
   - Haskell

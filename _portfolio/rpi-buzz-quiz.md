@@ -1,6 +1,6 @@
 ---
 # hidden: true
-number: 2
+number: -2
 title: "Raspberry Pi Buzz Quiz"
 techs: 
   - Python
