@@ -7,6 +7,7 @@ $typescript-color: #2d79c7 !default;
 $jekyll-color: #cc0000 !default;
 $xtext-color: #8f87a1 !default;
 $raspberry-pi: #c7053d !default;
+$rust-color: #834223 !default;
 
 // Colour classes
 .bc-java {
@@ -40,4 +41,8 @@ $raspberry-pi: #c7053d !default;
 
 .bc-maven {
     background: linear-gradient(90deg, rgba(245,153,30,1) 10%, rgba(225,91,39,1) 35%, rgba(202,26,52,1) 65%, rgba(131,34,122,1) 90%);
+}
+
+.bc-rust {
+    background-color: $rust-color;
 }
