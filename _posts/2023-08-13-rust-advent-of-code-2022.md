@@ -2,7 +2,7 @@
 # hidden: true
 layout: single
 title:  "Advent of Code 2022: Learning Rust"
-date:   2023-08-13 22:30:00 +0000
+date:   2023-08-13 22:30:00 +0100
 categories: rust advent-of-code
 techs: 
   - Rust
