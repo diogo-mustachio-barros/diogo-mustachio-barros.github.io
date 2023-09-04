@@ -8,6 +8,10 @@ $jekyll-color: #cc0000 !default;
 $xtext-color: #8f87a1 !default;
 $raspberry-pi: #c7053d !default;
 $rust-color: #834223 !default;
+$html-color: #e54b26 !default;
+$css-color: #006eb8 !default;
+$javascript-color: #e7c932 !default;
+$spring-color: #6db33f !default;
 
 // Colour classes
 .bc-java {
@@ -45,4 +49,20 @@ $rust-color: #834223 !default;
 
 .bc-rust {
     background-color: $rust-color;
+}
+
+.bc-html {
+    background-color: $html-color;
+}
+
+.bc-css {
+    background-color: $css-color;
+}
+
+.bc-javascript {
+    background-color: $javascript-color;
+}
+
+.bc-spring {
+    background-color: $spring-color;
 }
