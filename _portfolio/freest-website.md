@@ -1,6 +1,7 @@
 ---
 # hidden: true
 number: -5
+classes: wide
 title: "FreeST Website"
 techs:
   - Jekyll

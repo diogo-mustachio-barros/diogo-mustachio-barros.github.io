@@ -1,6 +1,7 @@
 ---
 # hidden: true
 number: -3
+classes: wide
 title: "JConsole"
 techs:
   - Java

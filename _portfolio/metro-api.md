@@ -1,6 +1,7 @@
 ---
 # hidden: true
 number: -1
+classes: wide
 title: "API-EstadoServicoML"
 techs: 
   - Java
