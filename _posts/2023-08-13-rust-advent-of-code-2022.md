@@ -44,7 +44,7 @@ There are a total of 25 days an 2 parts per day, a total of 50 code *challenges*
   Any major *breakthrough* or collection of smaller ones might deserve a proper post in the future,
   but until then I'll be *crabbing* around.
 
-{% include figure image_path="/assets/images/rustacean-flat-happy.png" alt="ferris" caption="Ferris the crab, the unofficial mascot for Rust. Credits: rustacean.net" %}
+{% include figure image_path="/assets/images/rustacean-flat-happy.png" alt="ferris" caption="Ferris the crab, the unofficial mascot for Rust. Credits: rustacean.net" %}{: .align-center style="width: 70%;"}
 
 [freest]: https://freest-lang.github.io/
 [rust-book]: https://doc.rust-lang.org/stable/book/title-page.html
