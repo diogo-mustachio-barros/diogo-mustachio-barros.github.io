@@ -1,7 +1,8 @@
 ---
 # hidden: true
 number: -4
-title: "Hack your calculator @ Ciencias"
+classes: wide
+title: "Hack your calculator @ Ciências"
 techs:
   - TI-BASIC
   - Jekyll
@@ -10,15 +11,41 @@ toc: true
 repo: https://github.com/hack-your-calculator/hack-your-calculator.github.io
 ---
 
-<!-- ## Abstract -->
-**TODO**
+As of late march 2023, still at FCUL as student and investigator, I was asked if I had any activity
+  ideas for FCUL's Open Day. What is Open Day? It's a day where the faculty has activities and 
+  presentations for interested high-school students. It serves as a way to grow interest in what
+  we do and to, in some way, *recruit* future students.
 
-## Motivation
+The question I put up in my head is "*What would be more interesting for high-schoolers?*". My 
+  target theme was plain Programming. How do I make programming interesting for non-programmers?
+  The best way, in my view, is to make something *practical* and close to them. Something sparked
+  in my head: their graphical calculator!
 
-## Design
+Before I wanted to be a programmer, I was in love with physics and was ready to pursue it in 
+  university. However, work opportunities were not the brightest in Portugal, and at the time a 
+  friend of mine challenged me to try programming. At first it was interesting, I called it my 
+  "*Lego sandbox*", but then I discovered that our calculators could be programmed by us.
 
-## Implementation
+TI-BASIC was my first true love in programming. I would spend hours programming tools to use in
+  class and games to pass time. The ability to create something *real* with a direct effect
+  was exhilarating. Because of this, I went on to learn a bit of Java and then decide to study
+  Informatics Engineering in university.
 
-## Demo
+{% include figure image_path="/assets/images/ti-84-plus.jpg" alt="ti-84-plus" caption="Home page" %}{: .align-center style="width: 70%;"}
 
-## How to use
+Back on topic. Why not try to set these visiting students on the same path as me? So the plan
+  is clear now, create a tutorial on how to program some simple games in a TI-84
+  (they're overall more interesting than solving the quadratic formula). For simplicity, the
+  best was to create a website for easy access across lab computers and for future reference
+  if any student wanted to explore more after the activity.
+
+# Programming with a TI-84
+TODO
+
+## Programming tools for TI-BASIC
+TODO
+
+# Building a simple website with Jekyll and GitHub Pages
+TODO
+
+[![styled-image](/assets/images/hack-your-calculator-home.png " "){: .align-center}](/assets/images/hack-your-calculator-home.png "Home page")
