@@ -39,7 +39,7 @@ Now that I'm on vacation, it seems to be the perfect time to start learning this
 
 There are a total of 25 days an 2 parts per day, a total of 50 code *challenges*. I'll be doing
   them all in Rust as best as I can trying to improve each day. You can see my progress 
-  in my [portfolio]({% link _portfolio/rust-advent-of-code-2022.md %}){: target="_blank" rel="noopener noreferrer"}
+  in my [portfolio]({% link _portfolio/8-rust-advent-of-code-2022.md %}){: target="_blank" rel="noopener noreferrer"}
   where I'll be documenting each day, i.e. problem, solving said problem and its coding in Rust.
   Any major *breakthrough* or collection of smaller ones might deserve a proper post in the future,
   but until then I'll be *crabbing* around.
