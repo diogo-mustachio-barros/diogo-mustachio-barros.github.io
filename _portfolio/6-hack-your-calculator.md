@@ -40,12 +40,33 @@ Back on topic. Why not try to set these visiting students on the same path as me
   if any student wanted to explore more after the activity.
 
 # Programming with a TI-84
-TODO
+- Writing code
+  - Calculator
+  - Text editor
+  - IDE
+    - small text/phrases on why IDEs are important 
+- TI-BASIC language
+- Compiling
 
-## Programming tools for TI-BASIC
-TODO
+## TokenIDE
+- VSCode is a popular IDE, however, TokenIDE was designed for our purposes and is easier 
+  out-of-the-box
+
+## TI-BASIC
+- similar to BASIC
+- small amount of instructions
 
 # Building a simple website with Jekyll and GitHub Pages
-TODO
+- Simple page with:
+  - a small tutorial on how to start
+  - a page for each example with:
+    - short description
+    - overall game logic
+    - simplified code explanation
+    - full code and files
+    - references to 
+- Jekyll + GitHub Pages
+  - Theme: [Lanyon](https://lanyon.getpoole.com/)
+  - adapted with FCUL's colors
 
 [![styled-image](/assets/images/hack-your-calculator-home.png " "){: .align-center}](/assets/images/hack-your-calculator-home.png "Home page")
