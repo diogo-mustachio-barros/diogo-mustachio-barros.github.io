@@ -107,21 +107,41 @@ A quick and easy solution for this inconvenience is to bring your calculator int
 For those who wish to explore more, you can also use it to debug programs at deeper levels (cpu 
   registries, stack viewer, breakpoints). 
 
-# Building a simple website with Jekyll and GitHub Pages
-- Simple page with:
-  - a small tutorial on how to start
-  - a page for each example with:
-    - short description
-    - overall game logic
-    - simplified code explanation
-    - full code and files
-    - references to 
-- Jekyll + GitHub Pages
-  - Theme: [Lanyon](https://lanyon.getpoole.com/)
-  - adapted with FCUL's colors
+# Building a small website with Jekyll and GitHub Pages
+At this point, I already have everything needed to give a cool and interesting experience for
+  students (I hope), but I still need a medium. Well, powerpoint presentation is out of question
+  -- its a complete hell for coding -- and it would be a complete waste to give a paper tutorial.
+  If we already have students using computers to code, we'll give them a digital way of following
+  the tutorial. Furthermore, instead of a PDF file we opted to build a simple website for students
+  to visit even after they leave Open Day.
 
+As a *lazy* programmer, any complex combo of web frameworks are completely out of question. This
+  website is supposed to be a static display of information. Simpler than Jekyll and GitHub Pages
+  is impossible! I quickly chose [Lanyon](lanyon) as a theme and adapted with that gorgeous
+  FCUL blue. Now, the website could be built through only the use of markdowns files and everything
+  else is handled by GitHub Pages, more importantly the deployment.
+
+This is not supposed to be a complex tutorial with 20 pages of information. There's a home page 
+  with: information of what are the objectives, what tools we'll use and what are the basics to 
+  use them. Finally there's a page for each tutorial/program students can explore during the
+  activity with these main points:
+  - short description
+  - overall game logic
+  - simplified code explanation
+  - download links for full code and executable files
+  - references to helpful information
+
+There are 3 programs in total: Defuse the Bomb, Guessing Game and Slots. Each program has its 
+  difficulty, so students are advised to follow a given order. 
+  
 [![styled-image](/assets/images/hack-your-calculator-home.png " "){: .align-center}](/assets/images/hack-your-calculator-home.png "Home page")
+
+Check it out yourself [here](hack-your-calculator)!
+
+
 
 [ti-basic-developer]: http://tibasicdev.wikidot.com/
 [tokens-ide]: https://www.ticalc.org/archives/files/fileinfo/433/43315.html
 [wabbitemu]: http://wabbitemu.org/
+[lanyon]: https://lanyon.getpoole.com/
+[hack-your-calculator]: https://hack-your-calculator.github.io/pages/guess.html
