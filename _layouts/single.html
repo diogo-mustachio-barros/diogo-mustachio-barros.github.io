@@ -57,9 +57,7 @@ layout: default
           Repository: <a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer">{{ page.repo | remove:'https://' }}</a>
         </b>
       </section>
-      {% endif %}
-
-      {% if page.repos %}
+      {% elsif page.repos %}
       <b>
         Repositories: 
         <ul style="margin: 0.5em;">
