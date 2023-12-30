@@ -52,20 +52,15 @@ layout: default
       {% endif %}
 
       {% if page.repo %}
-      <section style="margin-bottom: 0.5em;">
-        <b>
-          Repository: <a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer">{{ page.repo | remove:'https://' }}</a>
-        </b>
-      </section>
+        <section style="margin-bottom: 0.5em;">
+          {% include repository.html repo = page.repo %}
+        </section>
       {% elsif page.repos %}
-      <b>
-        Repositories: 
-        <ul style="margin: 0.5em;">
+        <section style="margin-bottom: 0.5em;">
           {% for repo in page.repos %}
-          <li><a href="{{ repo }}" target="_blank" rel="noopener noreferrer">{{ repo | remove:'https://' }}</a></li>
+            {% include repository.html repo = repo %}<br>
           {% endfor %}
-        </ul>
-      </b>
+        </section>
       {% endif %}
 
       <section class="page__content e-content" itemprop="text" style="margin-top: 1em;">
