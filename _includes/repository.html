@@ -1,0 +1,11 @@
+{% assign repo_data = include.repo | remove: 'https://' | split: '/' %}
+{% assign repo_service = repo_data[0] | remove: '.com' %}
+{% assign repo_user    = repo_data[1] %}
+{% assign repo_project = repo_data[2] %}
+{% assign repo_id      = repo_user | append: '/' | append: repo_project %}
+
+<a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer">
+    <img src="https://badgen.net/badge/{{ repo_user }}/{{ repo_project }}/blue?icon={{ repo_service }}" 
+         alt="repository" 
+         style="transform: scale(1.5); transform-origin: left;">
+</a>
