@@ -69,7 +69,7 @@ Dear seasoned programmers: yes VSCode is also useful, but Tokens IDE is ready ou
 (Tokens IDE)[tokens-ide] is by far the most simple to both setup and use. It combines editing 
   with error highlighting and compilation.
 
-{% include figure image_path="/assets/images/tokens-ide.gif" alt="tokens-ide" caption="Tokens IDE (source: https://www.ticalc.org" %}{: .align-center style="width: 100%;"}
+{% include figure image_path="/assets/images/tokens-ide.gif" alt="tokens-ide" caption="Tokens IDE (source: https://www.ticalc.org)" %}{: .align-center style="width: 100%;"}
 
 The best feature of Tokens IDE is by far the ability to compile directly to a file that can be
   loaded to 
