@@ -31,7 +31,7 @@ TI-BASIC was my first true love in programming. I would spend hours programming 
   was exhilarating. Because of this, I went on to learn a bit of Java and then decide to study
   Informatics Engineering in university.
 
-{% include figure image_path="/assets/images/ti-84-plus.jpg" alt="ti-84-plus" caption="Home page" %}{: .align-center style="width: 70%;"}
+{% include figure image_path="/assets/images/ti-84-plus.jpg" alt="ti-84-plus" caption="Texas Instruments TI-84 Plus" %}{: .align-center style="width: 70%;"}
 
 Back on topic. Why not try to set these visiting students on the same path as me? So the plan
   is clear now, create a tutorial on how to program some simple games in a TI-84
@@ -40,21 +40,72 @@ Back on topic. Why not try to set these visiting students on the same path as me
   if any student wanted to explore more after the activity.
 
 # Programming with a TI-84
-- Writing code
-  - Calculator
-  - Text editor
-  - IDE
-    - small text/phrases on why IDEs are important 
-- TI-BASIC language
-- Compiling
+For most, the first interaction with programming a TI calculator is through the calculator itself.
+It has a basic editor and several menus of functions and operators to program with. But, as one 
+  would expect, a calculator with a handful of characters in width and height is not the most 
+  practical to use. A natural upgrade is to use a text editor on a pc as it avoids the awkwardness
+  of a calculator's menus and 'keyboard' (if we can even call it that). However, the lack of 
+  tools (such as the function and operator menus) when writing programs ends up delaying the 
+  development cycle because it requires more testing iterations to detect and fix bugs.
 
-## TokenIDE
-- VSCode is a popular IDE, however, TokenIDE was designed for our purposes and is easier 
-  out-of-the-box
+Fear not, for we TI developers are saved from such problems! At least most of them. There are a 
+  myriad of IDEs for every case and the TI calculators is no exception. Tokens IDE is perfect for
+  the use case and it speeds development significantly. It helps with the TI-BASIC syntax with
+  autocomplete and overall checking for syntax errors as we write programs. Most importantly it
+  compiles directly to a *calculator-ready* program.
+
+TI-BASIC is (at least for me) a very good language to start. It is very basic (as it name says)
+  while still having all core elements of mainstream programming languages. But we'll explore it
+  a bit more later on.
+
+Similarly to how I personally did it many years ago, the entire idea was guided by 
+  [this amazing tutorial](ti-basic-developer), to which I owe my software engineering path to.
+
+## Tokens IDE
+Dear seasoned programmers: yes VSCode is also useful, but Tokens IDE is ready out-of-the-box.
+  Although Visual Studio Code can be setup for TI-BASIC programming, it takes some time and 
+  attention that most high-schoolers don't have (yet).
+
+(Tokens IDE)[tokens-ide] is by far the most simple to both setup and use. It combines editing 
+  with error highlighting and compilation.
+
+{% include figure image_path="/assets/images/tokens-ide.gif" alt="tokens-ide" caption="Tokens IDE (source: https://www.ticalc.org" %}{: .align-center style="width: 100%;"}
+
+The best feature of Tokens IDE is by far the ability to compile directly to a file that can be
+  loaded to 
 
 ## TI-BASIC
 - similar to BASIC
 - small amount of instructions
+
+## TI Connect
+
+TI Connect is Texas Instruments' tool to link with a calculator. It's main features are screen 
+  capture and file/program management. We use this to load our freshly compiled programs into
+  the calculator to then test/use. There are other tools that do this but we always prefer
+  the official one whenever possible.
+
+{% include figure image_path="/assets/images/ti-connect.png" alt="ti-connect" caption="TI Connect (source: https://education.ti.com)" %}{: .align-center style="width: 80%;"}
+
+## Wabbitemu Emulator
+At some point, the development cycle becomes tiresome. Having to constantly transfer programs to a 
+  calculator to test them takes that immediate gratification of quick development, makes it feels
+  that the goal is still a hundred fixes, compiles, transfers and tests away.
+
+A quick and easy solution for this inconvenience is to bring your calculator into the computer 
+  itself. No need to transfer via TI-Connect, it is now a simple drag-and-drop to load a program 
+  into a virtual calculator. 
+
+[Wabbitemu](wabbitemu) is one such emulator. It's a calculator on a window where your mouse pointer
+  is your finger (but you can also use keybindings for shortcuts). The only thing to note is: you
+  are required to load your own ROM image. In other words, you must own a calculator, extract its
+  ROM and load it to use Wabbitemu. Acquiring a ROM through other sources is illegal, so be 
+  careful with that.
+
+{% include figure image_path="/assets/images/wabbitemu.jpg" alt="wabbitemu" caption="Wabbitemu emulator (source: https://www.majorgeeks.com)" %}{: .align-center style="width: 40%;"}
+
+For those who wish to explore more, you can also use it to debug programs at deeper levels (cpu 
+  registries, stack viewer, breakpoints). 
 
 # Building a simple website with Jekyll and GitHub Pages
 - Simple page with:
@@ -70,3 +121,7 @@ Back on topic. Why not try to set these visiting students on the same path as me
   - adapted with FCUL's colors
 
 [![styled-image](/assets/images/hack-your-calculator-home.png " "){: .align-center}](/assets/images/hack-your-calculator-home.png "Home page")
+
+[ti-basic-developer]: http://tibasicdev.wikidot.com/
+[tokens-ide]: https://www.ticalc.org/archives/files/fileinfo/433/43315.html
+[wabbitemu]: http://wabbitemu.org/
