@@ -84,7 +84,7 @@ The bread and butter of all this experience is the TI-BASIC programming language
 In TI-BASIC we can **store** values in variables with an `→`, for example `5→A` or `A*2→B`. We
   have if-statements from a short if, to a full if-then-else:
 
-```ti-basic
+```
 :If (condition)
 :(statement)
 
@@ -113,7 +113,7 @@ There are also three types of loop statements: `While`, `Repeat` and the classic
   `Repeat` are very similar, the first repeats a set of instructions *while the condition is true*
   and the second repeats *until the condition is true*.
 
-```ti-basic
+```
 :While (condition)
 :
     ...
@@ -131,7 +131,7 @@ There are also three types of loop statements: `While`, `Repeat` and the classic
   is set to 1). The loop iterates from the start value incrementing by the step until it reaches
   the end value (inclusive).
 
-```ti-basic
+```
 :For(variable,start,end,step
 :
     ...
