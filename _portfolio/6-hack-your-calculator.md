@@ -7,8 +7,12 @@ techs:
   - TI-BASIC
   - Jekyll
 status: complete
-toc: true
 repo: https://github.com/hack-your-calculator/hack-your-calculator.github.io
+toc: true
+abstract: |
+  Programming activity for FCUL's 2023 Open Day where high-school students learn and try
+  making games for a TI-84 calculator. The activity was held in a lab and made available
+  at a website hosted by GitHub Pages.
 ---
 
 As of late march 2023, still at FCUL as student and investigator, I was asked if I had any activity

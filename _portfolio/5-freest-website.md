@@ -6,13 +6,16 @@ title: "FreeST Website"
 techs:
   - Jekyll
 status: active
-toc: true
 repo: https://github.com/freest-lang/freest-lang.github.io
+toc: true
+abstract: |
+  A Jekyll and GitHub Pages website that has now become a home for FreeST. New versions are 
+  released here alongside a changelog. It also serves as a learning starting point with its
+  tutorial and documentation for standard libraries. On the academic side, it has a compendium
+  of all publications, talks and posters produced since its first inception.
 ---
 
-<!-- ## Abstract -->
-**TODO**
-
+<!-- 
 ## Motivation
 
 ## Design
@@ -21,4 +24,5 @@ repo: https://github.com/freest-lang/freest-lang.github.io
 
 ## Demo
 
-## How to use
+## How to use 
+-->

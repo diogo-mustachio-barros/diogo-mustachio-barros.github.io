@@ -7,14 +7,13 @@ techs:
   - Java
   - Maven
 status: complete
-toc: true
 repo: https://gitlab.com/diogofpbarros/api-estadoservicoml
----
-
-<!-- ## Abstract -->
-Java API library adapting Lisbon's subway system API for waiting times, line state and station 
+toc: true
+abstract: |
+  Java API library adapting Lisbon's subway system API for waiting times, line state and station 
   information. Meant for integration in other applications by providing a simple 1-to-1 conversion
   of the original API calls to Java ones. 
+---
 
 ## Motivation
 Since forever I've been obsessed with the subway, it was like an underground world. I would try to 

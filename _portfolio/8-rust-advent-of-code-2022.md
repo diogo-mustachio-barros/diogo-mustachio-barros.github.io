@@ -7,6 +7,8 @@ techs:
 status: active
 toc: true
 repo: https://github.com/diogo-mustachio-barros/rust-advent-of-code-2022
+abstract: |
+  Going through Advent of Code 2022 to learn Rust.
 ---
 
 Going through [Advent of Code 2022](advent-of-code){: target="_blank" rel="noopener noreferrer"}

@@ -4,15 +4,15 @@ number: -6
 classes: wide
 title: "FreeST Language VSCode Extension"
 techs:
-  - TypeScript
+  - YAML
 status: active
-toc: true
 repo: https://github.com/freest-lang/freest-language
+toc: true
+abstract: |
+  Visual Studio Code syntax highlighting extension for FreeST. 
 ---
 
-<!-- ## Abstract -->
-**TODO**
-
+<!-- 
 ## Motivation
 
 ## Design
@@ -21,4 +21,5 @@ repo: https://github.com/freest-lang/freest-language
 
 ## Demo
 
-## How to use
+## How to use 
+-->
