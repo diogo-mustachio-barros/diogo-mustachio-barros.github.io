@@ -75,8 +75,123 @@ The best feature of Tokens IDE is by far the ability to compile directly to a fi
   loaded to 
 
 ## TI-BASIC
-- similar to BASIC
-- small amount of instructions
+The bread and butter of all this experience is the TI-BASIC programming language. Although it was
+  created for calculators, it has a wide variety of primitives that resemble any mainstream 
+  language. For those who know BASIC, yes, it's similar.
+
+### Variables and Conditionals
+
+In TI-BASIC we can **store** values in variables with an `→`, for example `5→A` or `A*2→B`. We
+  have if-statements from a short if, to a full if-then-else:
+
+```ti-basic
+:If (condition)
+:(statement)
+
+:If (condition)
+:Then
+:(statement1)
+...
+:(statementx)
+:End
+
+:If (condition)
+:Then
+:(condition is true)
+:Else
+:(condition is false)
+:End
+```
+
+Notice TI-BASIC uses `End` as a terminator for these sections of code. Although these conditionals
+  are more than enough to do anything, TI-BASIC is missing an `ElseIf` statement. Any need to 
+  chain more than two scenarios require chained `If` statements.
+
+### Loops
+
+There are also three types of loop statements: `While`, `Repeat` and the classic `For`. `While` and
+  `Repeat` are very similar, the first repeats a set of instructions *while the condition is true*
+  and the second repeats *until the condition is true*.
+
+```ti-basic
+:While (condition)
+:
+    ...
+:
+:End
+
+:Repeat (condition)
+:
+    ...
+:
+:End
+```
+
+`For` loops take a variable, a start value, an end value and optionally a step value (by default 
+  is set to 1). The loop iterates from the start value incrementing by the step until it reaches
+  the end value (inclusive).
+
+```ti-basic
+:For(variable,start,end,step
+:
+    ...
+:
+:End
+```
+
+For those with a keen eye, indeed there is a `)` missing in the `For`, but, similarly to HTML, 
+  TI-BASIC is smart enough for it to be optional. More often than not, we avoid writing any
+  of these *non-essential* characters to save memory space, but more on that later. 
+
+### Labels and Menus
+Seasoned programmers, look away! TI-BASIC has the dreaded `Lbl` and `Goto` combo. However, it is
+  quite useful for a single reason: menus. The `Lbl` command is used to mark a line in code with 
+  an identifier (`Lbl 123` for example) to which we can then *go to* using a `Goto` command 
+  (`Goto 123` for the previous example).
+
+Menus in TI-BASIC are very useful when we're building a *toolbox* application, where every
+  *tool* is contained within its own label. To select which tool to use, we simply provide a menu
+  of options where each option *goes to* its respective label.
+
+```
+:Menu("SAMPLE MENU","OPTION 1",1,"OPTION 2",2
+:Lbl 1
+    ...
+:Stop
+:Lbl 2
+     ...
+```
+
+The `Lbl` command marks the start of our 'section', but we need to mark its end or else it will
+  overflow to the next `Lbl` and therefor, to the next tool. To *stop* execution before it reaches
+  other tool, we use `Stop`. If instead of exiting the program altogether you rather want to go 
+  somewhere else, just use a `Lbl` and `Goto`!
+
+Just keep in mind to not overuse labels as it is much slower and may lead to memory leaks.
+
+### Input and Output
+For user interaction, there are also the `Input` and `Disp` for input and output respectively.
+  `Input` may be used to display some text (optionally) and store input in a variable. For example,
+  `Input "FIRST?",A` will display the text `FIRST?` and then allow the user to input a value to
+  store in variable `A`. `Disp` will output to the screen either text or some variable. To display
+  the text `VALUE:` followed by the value of variable `A` we write `Disp "VALUE:",A`.  
+
+### Optimization
+It's easy to start thinking of abstractions, try to design some huge program or to get lost 
+  daydreaming the intricacies of the language, but let me pull you back to reality: it's a 
+  calculator. What I mean by this is: look at TI-BASIC not as Java, but as *Assembly+*.
+
+Every character counts for the total space a program uses, and after some dozens of lines
+  of code, saving `)` whenever possible will be noticeable. Refactoring code to be as 
+  efficient as possible is essential when programs grow big. There are a lot of small 
+  optimizations one can do and [TI-Basic Developer](ti-basic-developer) does a great job
+  explaining it.
+
+The one detail I would like to draw attention to is how to wait some time. Most languages have
+  some `wait` or `sleep` function to wait a given amount of time, but TI-BASIC does not. What
+  is done instead is take advantage of the calculator's slowness. It might not be accurate,
+  however, putting the calculator in an empty `For` loop counting up to 1000 is enough to 
+  make it apparently *sleep*, or in better terms, to make a delay.
 
 ## TI Connect
 
