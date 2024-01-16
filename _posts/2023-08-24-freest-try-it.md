@@ -11,14 +11,14 @@ techs:
   - CSS
 ---
 
-FreeST was previously available in two places: [RSS](rss) and [TryIt](old-tryit). RSS was general 
+FreeST was previously available in two places: [RSS][rss] and [TryIt][old-tryit]. RSS was general 
     information and downloads, while the TryIt page was a way of trying FreeST online without the 
     need to install any tools (such as Stack or Haskell).
 
-Recently, we decided to 'move out' to [GitHub](freest-lang-github), and thus, create a 
-    [new page](freest-lang) with new and improved features. It was implemented using Jekyll and 
+Recently, we decided to 'move out' to [GitHub][freest-lang-github], and thus, create a 
+    [new page][freest-lang] with new and improved features. It was implemented using Jekyll and 
     served through GitHub Pages. The RSS page is now 'outdated', but the same cannot be said for 
-    the [TryIt](old-tryit) page. We work around this by adding a link to it in the new website, 
+    the [TryIt][old-tryit] page. We work around this by adding a link to it in the new website, 
     but it is desirable to have them together so that visitors do not need to toggle between 
     websites.
 
@@ -72,15 +72,15 @@ No way I'm even going to elaborate on this. It would be hellish and unwise to tr
     solutions that we can use in the context of Jekyll and GitHub Pages.
 
 ## CodeMirror
-TryIt uses [CodeMirror](code-mirror) to implement a code editing field. We want to 
+TryIt uses [CodeMirror][code-mirror] to implement a code editing field. We want to 
     replicate this field in the new website but fully configured for FreeST. CodeMirror uses `npm`
     (or other dependency managers if you choose so) to install it, however, Jekyll uses `Bundle` 
     and not `npm`. Attempts have been made to merge both under a same project but it becomes too 
-    cumbersome when in combination with GitHub Pages (check [here](code-mirror-github-pages) for 
+    cumbersome when in combination with GitHub Pages (check [here][code-mirror-github-pages] for 
     more info).
 
 Fortunately, there is a git project that provides CodeMirror with vanilla JavaScript 
-    [wc-codemirror](wc-codemirror). With a few lines of code, we can embbed a JavaScript editor 
+    [wc-codemirror][wc-codemirror]. With a few lines of code, we can embbed a JavaScript editor 
     into any page:
 
 ```html
@@ -127,27 +127,30 @@ Ace also has the option of creating your own themes, syntax highlighting and IDE
     what was already done for FreeST's syntax highlighting extension in VSCode (you can check it 
     in my [portfolio page]({% link _portfolio/freest-language.md %}){: target="_blank" rel="noopener noreferrer"})
 
-# Building the editor
+# Building the page
 
-- page
-    - editor
-    - button
-    - terminal
-- ace
-    - integration
-    - syntax highlighting
-    - placeholder code
-- terminal
-    - copy & paste from old tryit
+## Editor
+
+- **ace**
+- integration
+- syntax highlighting
+- placeholder code
+
+## Execute
+
 - run button
-    - used one from minimal mistakes' options
-    - onclick function
-- running code
+- used one from minimal mistakes' options
+- onclick function for running code
     - getting code from editor
     - POST request to tryit
     - output to terminal
 
+## Output terminal
+- copy & paste from old tryit
+
 # Good news, bad news
+- https site cannot (safely) make requests to http server
+
 
 [rss]: http://rss.di.fc.ul.pt/tools/freest/
 [old-tryit]: http://gloss.di.fc.ul.pt/tryit/FreeST 
