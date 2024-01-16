@@ -95,7 +95,7 @@ There is catch however: custom syntax highlighting is only available to the orig
     alltogether or settle for Haskell's one. Neither of these options seem desirable.
 
 ## Ace
-[Ace](ace) is (similarly to CodeMirror) a web component for a code editor. Unlike
+[Ace][ace] is (similarly to CodeMirror) a web component for a code editor. Unlike
     CodeMirror, it does not require any other frameworks, so we can embbed it directly into 
     HTML. The following code is a small editor for JavaScript:
 
