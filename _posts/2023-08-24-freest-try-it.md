@@ -72,6 +72,11 @@ No way I'm even going to elaborate on this. It would be hellish and unwise to tr
     solutions that we can use in the context of Jekyll and GitHub Pages.
 
 ## CodeMirror
+
+<!-- Fix for Minimal Mistake's issue of code block + aligned figure (check MM #3187) -->
+<div markdown="1" style="display: inline-block;">
+{% include figure image_path="/assets/images/codemirror-logo.svg" alt="codemirror-logo" caption="CodeMirror logo." %}{: .align-right .text-right style="width: 30%; margin:auto; min-width: 200px;"}
+
 TryIt uses [CodeMirror][code-mirror] to implement a code editing field. We want to 
     replicate this field in the new website but fully configured for FreeST. CodeMirror uses `npm`
     (or other dependency managers if you choose so) to install it, however, Jekyll uses `Bundle` 
@@ -82,6 +87,7 @@ TryIt uses [CodeMirror][code-mirror] to implement a code editing field. We want 
 Fortunately, there is a git project that provides CodeMirror with vanilla JavaScript 
     [wc-codemirror][wc-codemirror]. With a few lines of code, we can embbed a JavaScript editor 
     into any page:
+</div>
 
 ```html
 <wc-codemirror mode="javascript"></wc-codemirror>
@@ -95,9 +101,15 @@ There is catch however: custom syntax highlighting is only available to the orig
     alltogether or settle for Haskell's one. Neither of these options seem desirable.
 
 ## Ace
+
+<!-- Fix for Minimal Mistake's issue of code block + aligned figure (check MM #3187) -->
+<div markdown="1" style="display: inline-block;">
+{% include figure image_path="/assets/images/ace-logo.png" alt="ace-logo" caption="Ace logo." %}{: .align-right style="width: 30%; margin:auto; min-width: 200px;"}
+
 [Ace][ace] is (similarly to CodeMirror) a web component for a code editor. Unlike
     CodeMirror, it does not require any other frameworks, so we can embbed it directly into 
     HTML. The following code is a small editor for JavaScript:
+</div>
 
 ```html
 <style type="text/css" media="screen">
