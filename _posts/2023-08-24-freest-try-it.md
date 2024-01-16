@@ -3,7 +3,7 @@
 layout: single
 title:  "Creating an online IDE for FreeST"
 date:   2023-08-24 22:30:00 +0100
-categories: rust advent-of-code
+categories: jekyll try-it
 techs: 
   - Jekyll
   - JavaScript
