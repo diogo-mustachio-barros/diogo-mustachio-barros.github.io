@@ -141,12 +141,76 @@ Ace also has the option of creating your own themes, syntax highlighting and IDE
 
 # Building the page
 
+To build this page we'll create a new Jekyll layout `tryit.html` that extends the default layout 
+    and contains our editor, a `Run` button and an output terminal to show the program result.
+
+```html
+---
+layout: default
+---
+
+<h1>FreeST Online</h1>
+
+<br>
+
+<div id="editor"></div>
+
+<div id="button-container">
+    <button id="run" class="btn btn-outline" onclick="executeCode()">Run</button>
+</div>
+
+<div id="terminal" class="scroll-area">
+    <pre id="terminal-content" style="margin-top: 0;">$</pre>
+</div>
+```
+
 ## Editor
 
-- **ace**
-- integration
+As previously said, we'll be using [Ace](#ace) to implement a code editor with custom syntax
+    highlighting.
+
 - syntax highlighting
-- placeholder code
+https://github.com/freest-lang/freest-lang.github.io/blob/main/scripts/mode-freest.js
+
+```js
+this.$rules = {
+    'start' : [
+        ...
+        { include: '#types' },
+        ...
+    ],
+
+    '#types': [
+        {
+            token: 'support.type.freest',
+            regex: /\b(Int|Char|Bool|String)\b/
+        },
+        {
+            token: 'support.type.session.freest',
+            regex: /\b(Skip|End)\b/
+        }
+    ],
+}
+```
+
+```html
+<!-- Ace editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.24.1/ace.js" integrity="sha512-qoTuZAi37gnhWcmNJlzdcWsWlUnI+kWSAd4lGkfNJTPaDKz5JT8buB77B30bTCnX0mdk5tZdvKYZtss+DNgUFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/scripts/mode-freest.js"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/chrome");
+
+    var FreestMode = ace.require("ace/mode/freest").Mode;
+    editor.session.setMode(new FreestMode());
+
+    /* Hello world sample, div formats multiline into a single line
+        so we set it manually here and put the cursor in the start*/
+    editor.setValue('main : ()\nmain = putStrLn "Hello, World!"', -1);
+</script>
+```
+
+
 
 ## Execute
 
@@ -156,6 +220,41 @@ Ace also has the option of creating your own themes, syntax highlighting and IDE
     - getting code from editor
     - POST request to tryit
     - output to terminal
+
+```html
+<!-- Code execution -->
+
+<script>
+    async function executeCode() {
+        /* HTML ELEMENTS */
+        /*const editor = document.getElementById("editor").value;*/
+        var terminal = document.getElementById("terminal-content");
+
+        /* WAITING */
+        terminal.innerHTML = "Running...";
+
+        /* INPUT */
+        const code = editor.getValue(); 
+
+        /* EXECUTION REQUEST */
+        const options = {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: code /* JSON.stringify({code: code}), */
+        };
+
+        /* const response = await fetch("http://194.117.20.245:5011/run.json", options); */
+        const response = await fetch("https://85.240.106.6:8080/freest/run", options);
+        /* const result = (await response.json()).result; */
+        const result = await response.text();
+
+        /* OUTPUT */
+        terminal.innerHTML = result;
+    }   
+</script>
+```
 
 ## Output terminal
 - copy & paste from old tryit
