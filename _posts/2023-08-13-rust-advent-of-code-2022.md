@@ -31,11 +31,11 @@ Working with linearity and session types made me remember a *small* language cal
 
 Now that I'm on vacation, it seems to be the perfect time to start learning this new language.
   Usually, it would be best if a book (perhaps the 
-  [official online book](rust-book){: target="_blank" rel="noopener noreferrer"} ) or a tutorial.
+  [official online book][rust-book]{: target="_blank" rel="noopener noreferrer"} ) or a tutorial.
   However, my arrogance tells me to *just dive in* and start doing interesting things. Instead
   of thinking and designing a project completely blind of Rust's features, what better way to
   learn and do something fun than completing 
-  [Advent of Code 2022](advent-of-code){: target="_blank" rel="noopener noreferrer"}?
+  [Advent of Code 2022][advent-of-code]{: target="_blank" rel="noopener noreferrer"}?
 
 There are a total of 25 days an 2 parts per day, a total of 50 code *challenges*. I'll be doing
   them all in Rust as best as I can trying to improve each day. You can see my progress 
