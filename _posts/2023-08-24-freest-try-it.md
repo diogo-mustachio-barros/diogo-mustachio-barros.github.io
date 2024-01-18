@@ -9,6 +9,7 @@ techs:
   - JavaScript
   - HTML
   - CSS
+  - REST
 ---
 
 FreeST was previously available in two places: [RSS][rss] and [TryIt][old-tryit]. RSS was general 
@@ -167,10 +168,16 @@ layout: default
 ## Editor
 
 As previously said, we'll be using [Ace](#ace) to implement a code editor with custom syntax
-    highlighting.
+    highlighting. At its core, Ace uses the same logic as the VSCode's syntax highlighting
+    extension: a set of regex rules that identify pieces of text as variables, types, etc.
 
-- syntax highlighting
-https://github.com/freest-lang/freest-lang.github.io/blob/main/scripts/mode-freest.js
+To give a short explanation, imagine a regex but instead of a single pattern, you are able
+    to create many patterns and connect them to capture more complex strucutres. For example,
+    starting in rule `start`, we can match another pattern `#types` which then identifies 
+    functional types `Int`, `Char`, `Bool` and `String` with the tag `support.type.freest`, 
+    or session types `Skip` and `End` with the tag `support.type.session.freest`. Tags are
+    then used by the theme to pick which color the text should be. This is only an excerpt,
+    if you want to check it fully [see here][syntax-highlighting].
 
 ```js
 this.$rules = {
@@ -193,8 +200,10 @@ this.$rules = {
 }
 ```
 
+Now it's a simple case of assembling the Ace editor just like the example and set the syntax 
+    highlighting to our custom FreeST mode. 
+
 ```html
-<!-- Ace editor -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.24.1/ace.js" integrity="sha512-qoTuZAi37gnhWcmNJlzdcWsWlUnI+kWSAd4lGkfNJTPaDKz5JT8buB77B30bTCnX0mdk5tZdvKYZtss+DNgUFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/scripts/mode-freest.js"></script>
 <script>
@@ -210,20 +219,25 @@ this.$rules = {
 </script>
 ```
 
+Notice that instead of leaving placeholder code in the
+    HTML, we set it manually in the script. Why is this? If we put it in HTML we lose paragraphs
+    (for some reason) and it changes to a single line, while through JS we can preserve this.
 
+## Output terminal
+I have to admit, I'm not the best at creating something *pretty* nor I have the patience to design
+    it with CSS and HTML. To avoid any of these 'barriers' -- if you choose to call them so -- we
+    just copied the old TryIt terminal. 
 
-## Execute
+## Execution
 
-- run button
-- used one from minimal mistakes' options
-- onclick function for running code
-    - getting code from editor
-    - POST request to tryit
-    - output to terminal
+Execution is triggered on the click of a button. This button takes text from the editor and makes an 
+    HTTP POST request to the same server hosted at FCUL. Once again, we just took a preexisting 
+    button from Minimal Mistakes (the Jekyll theme of our website) and added the respective code
+    to request code execution. While the request is being processed, we display a simple 
+    `Running...` message and when we receive the result, we display it as-is in the terminal. This
+    way it's just like using FreeST on a terminal.
 
 ```html
-<!-- Code execution -->
-
 <script>
     async function executeCode() {
         /* HTML ELEMENTS */
@@ -245,9 +259,8 @@ this.$rules = {
             body: code /* JSON.stringify({code: code}), */
         };
 
-        /* const response = await fetch("http://194.117.20.245:5011/run.json", options); */
         const response = await fetch("https://85.240.106.6:8080/freest/run", options);
-        /* const result = (await response.json()).result; */
+        
         const result = await response.text();
 
         /* OUTPUT */
@@ -256,12 +269,34 @@ this.$rules = {
 </script>
 ```
 
-## Output terminal
-- copy & paste from old tryit
+If at some time in the future we decide to change our backend in any way, we can simply change this
+    function as needed. Two realistic scenarios are: if we change the REST protocol, and if the 
+    server changes IP.
+
+## Final result
+
+In the end we have a nice online editor to show everyone how FreeST is amazing without asking them to
+    first install Haskell, then Stack, then download FreeST, install Freest ... This is our version
+    of *plug-and-play* for languages: try-it, test its features and take it to the limit, if you 
+    like it you can consider installing it. Here's the final result:
+
+{% include figure image_path="/assets/images/freest-tryit.png" alt="freest-tryit" caption="New and improved FreeST TryIt" %}
+
+Check it out through [this link][new-tryit].
 
 # Good news, bad news
-- https site cannot (safely) make requests to http server
+Queue the music and the baloons, it's done and working... or is it? After deploying it to GitHub
+    Pages, the example is stuck in `Running...`. A closer inspection reveals the culprit:
 
+{% include figure image_path="/assets/images/tryit-error.png" alt="tryit-error" %}
+
+GitHub Pages hosts using HTTPS, however our FreeST backend runs on HTTP. It's unsafe (and forbidden
+    by default) to make requests from safe to unsafe sources, and thus our implementation is dead 
+    in the water.
+
+The only solution to our problem is to change our backend server to HTTPS. For now, we just hid the
+    page from the navigation bar on the left but it is still there. If you wish to bruteforce it,
+    you can disable your browser's security to allow the request to be made and use the editor.
 
 [rss]: http://rss.di.fc.ul.pt/tools/freest/
 [old-tryit]: http://gloss.di.fc.ul.pt/tryit/FreeST 
@@ -271,3 +306,5 @@ this.$rules = {
 [code-mirror-github-pages]: https://talk.jekyllrb.com/t/jekyll-bundler-and-npm/5203/2
 [wc-codemirror]: https://github.com/vanillawc/wc-codemirror
 [ace]: https://ace.c9.io/
+[syntax-highlighting]: https://github.com/freest-lang/freest-lang.github.io/blob/main/scripts/mode-freest.js
+[new-tryit]: https://freest-lang.github.io/online-freest/
