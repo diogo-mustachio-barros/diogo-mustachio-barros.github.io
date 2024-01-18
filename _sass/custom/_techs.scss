@@ -12,6 +12,10 @@ $html-color: #e54b26 !default;
 $css-color: #006eb8 !default;
 $javascript-color: #e7c932 !default;
 $spring-color: #6db33f !default;
+$docker-light-blue: #1D63ED !default;
+$docker-dark-blue: #00084D !default;
+
+// To help create gradients use: https://cssgradient.io/
 
 // Colour classes
 .bc-java {
@@ -19,7 +23,6 @@ $spring-color: #6db33f !default;
 }
 
 .bc-python {
-    // background-color: $python-color;
     background-image: linear-gradient(135deg, $python-blue 40%, $python-yellow 100%);
 }
 
@@ -44,7 +47,7 @@ $spring-color: #6db33f !default;
 }
 
 .bc-maven {
-    background: linear-gradient(90deg, rgba(245,153,30,1) 10%, rgba(225,91,39,1) 35%, rgba(202,26,52,1) 65%, rgba(131,34,122,1) 90%);
+    background: linear-gradient(135deg, rgba(245,153,30,1) 10%, rgba(225,91,39,1) 35%, rgba(202,26,52,1) 65%, rgba(131,34,122,1) 90%);
 }
 
 .bc-rust {
@@ -65,4 +68,9 @@ $spring-color: #6db33f !default;
 
 .bc-spring {
     background-color: $spring-color;
+}
+
+.bc-docker {
+    background-color: $docker-light-blue;
+    // background: linear-gradient(90deg, $docker-light-blue 25%, $docker-dark-blue 90%);
 }
