@@ -31,3 +31,7 @@ abstract: |
   - Iris - https://iris-project.org/
   - Kotlin - https://kotlinlang.org/
   - Rust - https://www.rust-lang.org/
+
+- Jekyll + GitHub Pages
+- Just the Docs
+- FreeST TryIt (connect with post)
