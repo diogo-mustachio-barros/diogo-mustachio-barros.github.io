@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: About
 permalink: /about/
 ---
@@ -12,7 +13,7 @@ Born and raised in Lisbon, Portugal but with strong northern roots in *Trás-os~
     Texas Instruments TI-84 graphic calculator.
 
 <!-- ![meme-turn](/assets/images/meme-turn.jpg){: .align-center} -->
-{% include figure image_path="/assets/images/meme-turn.jpg" alt="meme-turn" caption="Last minute decisions in highschool." %}
+{% include figure image_path="/assets/images/meme-turn.jpg" alt="meme-turn" caption="Last minute decisions in highschool." %}{: .align-center style="width: 70%;"} 
 
 
 
@@ -23,7 +24,7 @@ Diogo enrolled in a BSc in *Informatics Engineering* at *Faculdade de Ciências 
     in 2020 with a final grade of 16.
 
 <!-- ![languages](/assets/images/languages.jpg){: .align-center} -->
-{% include figure image_path="/assets/images/languages.jpg" alt="languages" caption="Some languages learned in Informatics Engineering." %}
+{% include figure image_path="/assets/images/languages.jpg" alt="languages" caption="Some languages learned in Informatics Engineering." %}{: .align-center style="width: 70%;"} 
 
 
 
@@ -35,7 +36,7 @@ On December 2019, while on his BSc, he began as an undergraduate student at
     guaranteeing communication follows a pre-defined protocol. 
 
 <!-- ![lasige-logo](/assets/images/lasige-logo.jpg){: .align-center} -->
-{% include figure image_path="/assets/images/lasige-logo.jpg" alt="lasige-logo" caption="LASIGE research unit logo." %}
+{% include figure image_path="/assets/images/lasige-logo.jpg" alt="lasige-logo" caption="LASIGE research unit logo." %}{: .align-center style="width: 70%;"} 
 
 
 
@@ -51,7 +52,7 @@ In the summer of 2020, between finishing his BSc and starting his MsC, Diogo par
 <!-- TODO: final report? https://novacidade.pt/wp-content/uploads/2020/11/Annexe-4.1_-BitBin.pdf -->
 <!-- TODO: link to project? part of portfolio? -->
 
-{% include figure image_path="/assets/images/crypto-summer.webp" alt="crypto-summer" caption="CryptoSummer summer school." %} 
+{% include figure image_path="/assets/images/crypto-summer.webp" alt="crypto-summer" caption="CryptoSummer summer school." %}{: .align-center style="width: 70%;"} 
 
 
 
@@ -74,7 +75,7 @@ During his MsC he also was a Monitor for practical classes in Programming I (fir
     Student Volunteer, and presented a [*preview* of his thesis][inforum-paper] at 
     [INForum Informatics Symposium 2022][inforum].
 
-{% include figure image_path="/assets/images/inforum.jpg" alt="inforum" caption="Inforum Informatics Symposium." %} 
+{% include figure image_path="/assets/images/inforum.jpg" alt="inforum" caption="Inforum Informatics Symposium."%}{: .align-center style="width: 70%;"} 
 
 
 
