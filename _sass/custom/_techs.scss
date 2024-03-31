@@ -14,6 +14,8 @@ $javascript-color: #e7c932 !default;
 $spring-color: #6db33f !default;
 $docker-light-blue: #1D63ED !default;
 $docker-dark-blue: #00084D !default;
+$mongodb-light-green: #4db33d !default;
+$mongodb-dark-green: #3fa037 !default;
 
 // To help create gradients use: https://cssgradient.io/
 
@@ -73,4 +75,9 @@ $docker-dark-blue: #00084D !default;
 .bc-docker {
     background-color: $docker-light-blue;
     // background: linear-gradient(90deg, $docker-light-blue 25%, $docker-dark-blue 90%);
+}
+
+.bc-mongodb {
+    background: $mongodb-light-green;
+    background: linear-gradient(90deg, $mongodb-light-green 25%, $mongodb-dark-green 75%);
 }
