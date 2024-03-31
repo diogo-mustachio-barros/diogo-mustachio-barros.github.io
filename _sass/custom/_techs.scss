@@ -81,3 +81,8 @@ $mongodb-dark-green: #3fa037 !default;
     background: $mongodb-light-green;
     background: linear-gradient(90deg, $mongodb-light-green 25%, $mongodb-dark-green 75%);
 }
+
+.bc-tauri {
+    background: rgb(36,200,219);
+    background: linear-gradient(15deg, rgba(36,200,219,1) 40%, rgba(255,193,49,1) 60%);
+}
