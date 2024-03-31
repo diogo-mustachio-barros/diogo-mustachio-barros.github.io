@@ -6,7 +6,7 @@ title: "FreeST VSCode LSP Extension"
 techs:
   - TypeScript
   - Haskell
-status: active
+status: inactive
 repos: 
   - https://github.com/freest-lang/freest-lsp
   - https://github.com/freest-lang/freest-lsp-server

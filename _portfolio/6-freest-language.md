@@ -5,7 +5,7 @@ classes: wide
 title: "FreeST Language VSCode Extension"
 techs:
   - YAML
-status: active
+status: inactive
 repo: https://github.com/freest-lang/freest-language
 toc: true
 abstract: |

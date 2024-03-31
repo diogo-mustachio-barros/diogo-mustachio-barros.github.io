@@ -4,7 +4,7 @@ number: -8
 title: "Advent of Code 2022"
 techs: 
   - Rust
-status: active
+status: inactive
 toc: true
 repo: https://github.com/diogo-mustachio-barros/rust-advent-of-code-2022
 abstract: |
