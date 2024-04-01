@@ -1,21 +1,41 @@
 // Colours
-$java-color: #f89820  !default; 
-$python-yellow: #ffd43b !default;
-$python-blue: #306998 !default;
-$haskell-color: #634f88 !default;
-$typescript-color: #2d79c7 !default;
-$jekyll-color: #cc0000 !default;
-$xtext-color: #8f87a1 !default;
-$raspberry-pi: #c7053d !default;
-$rust-color: #834223 !default;
-$html-color: #e54b26 !default;
-$css-color: #006eb8 !default;
-$javascript-color: #e7c932 !default;
-$spring-color: #6db33f !default;
-$docker-light-blue: #1D63ED !default;
-$docker-dark-blue: #00084D !default;
+// Java
+$java-color         : #f89820 !default; 
+// Python
+$python-yellow      : #ffd43b !default;
+$python-blue        : #306998 !default;
+// Haskell
+$haskell-color      : #634f88 !default;
+// TypeScript
+$typescript-color   : #2d79c7 !default;
+// Jekyll
+$jekyll-color       : #cc0000 !default;
+// Xtext
+$xtext-color        : #8f87a1 !default;
+// Raspberry Pi
+$raspberry-pi       : #c7053d !default;
+// Rust
+$rust-color         : #834223 !default;
+// HTML
+$html-color         : #e54b26 !default;
+// CSS
+$css-color          : #006eb8 !default;
+// Javascript
+$javascript-color   : #e7c932 !default;
+// Spring
+$spring-color       : #6db33f !default;
+// Docker
+$docker-light-blue  : #1D63ED !default;
+$docker-dark-blue   : #00084D !default;
+// MongoDB
 $mongodb-light-green: #4db33d !default;
-$mongodb-dark-green: #3fa037 !default;
+$mongodb-dark-green : #3fa037 !default;
+// Tauri
+$tauri-blue         : #24c8db !default;
+$tauri-yellow       : #ffc131 !default;
+// Vue
+$vue-grey           : #34495e !default;
+$vue-green          : #41b883 !default;
 
 // To help create gradients use: https://cssgradient.io/
 
@@ -79,10 +99,16 @@ $mongodb-dark-green: #3fa037 !default;
 
 .bc-mongodb {
     background: $mongodb-light-green;
-    background: linear-gradient(90deg, $mongodb-light-green 25%, $mongodb-dark-green 75%);
+    background: linear-gradient(90deg, $mongodb-light-green 40%, $mongodb-dark-green 60%);
 }
 
 .bc-tauri {
-    background: rgb(36,200,219);
-    background: linear-gradient(15deg, rgba(36,200,219,1) 40%, rgba(255,193,49,1) 60%);
+    background: $tauri-blue;
+    background: linear-gradient(15deg, $tauri-blue 30%, $tauri-yellow 70%);
+}
+
+
+.bc-vue {
+    background: $vue-grey;
+    background: linear-gradient(90deg, $vue-grey 20%, $vue-green 80%);
 }
