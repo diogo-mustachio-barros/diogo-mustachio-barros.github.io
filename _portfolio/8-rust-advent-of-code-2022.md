@@ -1,5 +1,6 @@
 ---
 # hidden: true
+wip: true
 number: -8
 title: "Advent of Code 2022"
 techs: 

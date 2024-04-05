@@ -1,5 +1,6 @@
 ---
 # hidden: true
+wip: true
 number: -7
 classes: wide
 title: "FreeST VSCode LSP Extension"

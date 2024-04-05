@@ -1,5 +1,6 @@
 ---
 # hidden: true
+wip: true
 number: -6
 classes: wide
 title: "FreeST Language VSCode Extension"
