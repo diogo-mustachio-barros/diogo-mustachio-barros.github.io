@@ -28,6 +28,15 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
+      {% if page.wip %}
+      <div class="notice--danger text-center">
+        <h2 style="margin: auto;">This post is unfinished.</h2>
+        <p>
+          The following post is a <b>Work In Progress</b> and will suffer changes in the future.
+        </p>
+      </div>
+      {% endif %}
+
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}
