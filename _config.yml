@@ -135,7 +135,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon: fas fa-fw fa-link
+      icon: fab fa-linkedin 
       url: https://pt.linkedin.com/in/diogo-barros-13849016a
 
 # Site Footer
