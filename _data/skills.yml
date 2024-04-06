@@ -1,0 +1,60 @@
+- name: Programming Languages
+  skills:
+    - name : Java
+      level: 8
+    - name : Haskell
+      level: 8
+    - name : Python
+      level: 6
+    - name : Rust
+      level: 7
+    - name : C
+      level: 4
+    - name : JavaScript
+      level: 6
+    - name : TypeScript
+      level: 5
+    - name : Solidity
+      level: 3
+    - name : SQL
+      level: 7
+- name: Databases
+  skills:
+    - name : MySQL
+      level: 7
+    - name : MariaDB
+      level: 6
+    - name : MongoDB
+      level: 6
+- name: Web
+  skills:
+    - name : Angular
+      level: 4
+    - name : Express
+      level: 4
+    - name : NodeJS
+      level: 4
+- name: UI
+  skills:
+    - name : Tauri
+      level: 6
+    - name : Vue
+      level: 5
+    - name : React
+      level: 4
+    - name : JavaFX
+      level: 3
+- name: Others
+  skills:
+    - name : Spring
+      level: 6
+- name: Tools
+  skills:
+    - name : Git (GitHub and GitLab)
+      level: 8
+    - name : JUnit
+      level: 8
+    - name : Maven
+      level: 7
+    - name : Docker
+      level: 6
