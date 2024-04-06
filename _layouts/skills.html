@@ -16,8 +16,8 @@ layout: single
     {% for cat in site.data.skills %}
     {% assign skill = cat.skills[0] %}
     <tr>
-        <td rowspan="{{ cat.skills.size | plus: 1}}" style="text-align: center;"><h3>{{ cat.name }}</h3></td>
-        <td>{{ skill.name }}</td>
+        <td rowspan="{{ cat.skills.size | plus: 1}}" style="text-align: center;"><h3 style="margin: auto;">{{ cat.name }}</h3></td>
+        <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
         <td>
             <p class="skill-level" style="font-size: 2em; margin: auto;">
                 {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
@@ -28,7 +28,7 @@ layout: single
     {% assign rest = cat.skills | shift %}
     {% for skill in rest %}
     <tr>
-        <td>{{ skill.name }}</td>
+        <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
         <td>
             <p class="skill-level" style="font-size: 2em; margin: auto;">
                 {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}

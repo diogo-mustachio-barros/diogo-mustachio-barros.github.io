@@ -2,59 +2,83 @@
   skills:
     - name : Java
       level: 8
+      icon : /assets/logos/java-logo.png
     - name : Haskell
       level: 8
+      icon : /assets/logos/haskell-logo.png
     - name : Python
       level: 6
+      icon : /assets/logos/python-logo.png
     - name : Rust
       level: 7
+      icon : /assets/logos/rust-logo.png
     - name : C
       level: 4
+      icon : /assets/logos/c-logo.png
     - name : JavaScript
       level: 6
+      icon : /assets/logos/javascript-logo.png
     - name : TypeScript
       level: 5
+      icon : /assets/logos/typescript-logo.png
     - name : Solidity
       level: 3
+      icon : /assets/logos/solidity-logo.png
     - name : SQL
       level: 7
+      icon : /assets/logos/sql-logo.png
 - name: Databases
   skills:
     - name : MySQL
       level: 7
+      icon : /assets/logos/mysql-logo.png
     - name : MariaDB
       level: 6
+      icon : /assets/logos/mariadb-logo.png
     - name : MongoDB
       level: 6
+      icon : /assets/logos/mongodb-logo.png
 - name: Web
   skills:
     - name : Angular
       level: 4
+      icon : /assets/logos/angular-logo.png
     - name : Express
       level: 4
+      icon : /assets/logos/express-logo.png
     - name : NodeJS
       level: 4
+      icon : /assets/logos/nodejs-logo.png
 - name: UI
   skills:
     - name : Tauri
       level: 6
+      icon : /assets/logos/tauri-logo.png
     - name : Vue
       level: 5
+      icon : /assets/logos/vue-logo.png
     - name : React
       level: 4
+      icon : /assets/logos/react-logo.png
     - name : JavaFX
       level: 3
+      icon : /assets/logos/javafx-logo.png
 - name: Others
   skills:
     - name : Spring
       level: 6
+      icon : /assets/logos/spring-logo.png
 - name: Tools
   skills:
     - name : Git (GitHub and GitLab)
       level: 8
+      icon : /assets/logos/git-logo.png
     - name : JUnit
       level: 8
+      icon : /assets/logos/junit-logo.png
     - name : Maven
       level: 7
+      icon : /assets/logos/maven-logo.png
     - name : Docker
       level: 6
+      icon : /assets/logos/docker-logo.png
