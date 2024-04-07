@@ -1,7 +1,7 @@
 ---
 # hidden: true
 wip: true
-number: -8
+number: -9
 title: "Advent of Code 2022"
 techs: 
   - Rust

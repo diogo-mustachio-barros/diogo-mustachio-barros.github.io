@@ -1,7 +1,7 @@
 ---
 # hidden: true
 wip: true
-number: -7
+number: -8
 classes: wide
 title: "FreeST VSCode LSP Extension"
 techs:
