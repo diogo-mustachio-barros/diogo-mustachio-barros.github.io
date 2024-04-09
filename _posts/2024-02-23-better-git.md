@@ -1,7 +1,7 @@
 ---
 # hidden: true
 layout: single
-title:  "Cool Tools - a better environment for Git"
+title:  "A better environment for Git"
 date:   2024-02-24 14:00:00 +0100
 categories: terminal ubuntu git
 techs: 
@@ -77,6 +77,10 @@ After several hours of searching I found out the static nature of this `PS1` def
   it is set to call function `set_bash_prompt` to get its definition.
 
 ```bash
+get_current_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
+}
+
 set_bash_prompt() {
     user_info="\[\033[01;32m\]\u@\h\[\033[00m\]"
     workdir="\[\033[01;34m\]\w\[\033[00m\]"

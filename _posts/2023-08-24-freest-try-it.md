@@ -138,7 +138,7 @@ function foo(items) {
 Ace also has the option of creating your own themes, syntax highlighting and IDE-like features. The
     good news is it relies just on JavaScript to implement. It uses a structure very similar to 
     what was already done for FreeST's syntax highlighting extension in VSCode (you can check it 
-    in my [portfolio page]({% link _portfolio/6-freest-language.md %}){: target="_blank" rel="noopener noreferrer"})
+    in my [portfolio page]({% link _portfolio/7-freest-language.md %}){: target="_blank" rel="noopener noreferrer"})
 
 # Building the page
 

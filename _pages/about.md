@@ -49,9 +49,6 @@ In the summer of 2020, between finishing his BSc and starting his MsC, Diogo par
     There was also a webapp with integration with *Metamask* to simulate interactions with the 
     smart-contract running in our private network of two Raspberry Pis. 
 
-<!-- TODO: final report? https://novacidade.pt/wp-content/uploads/2020/11/Annexe-4.1_-BitBin.pdf -->
-<!-- TODO: link to project? part of portfolio? -->
-
 {% include figure image_path="/assets/images/crypto-summer.webp" alt="crypto-summer" caption="CryptoSummer summer school." %}{: .align-center style="width: 70%;"} 
 
 
