@@ -6,21 +6,21 @@
     - name : Haskell
       level: 8
       icon : /assets/logos/haskell-logo.png
-    - name : Python
-      level: 6
-      icon : /assets/logos/python-logo.png
     - name : Rust
       level: 7
       icon : /assets/logos/rust-logo.png
-    - name : C
-      level: 4
-      icon : /assets/logos/c-logo.png
+    - name : Python
+      level: 6
+      icon : /assets/logos/python-logo.png
     - name : JavaScript
       level: 6
       icon : /assets/logos/javascript-logo.png
     - name : TypeScript
       level: 5
       icon : /assets/logos/typescript-logo.png
+    - name : C
+      level: 4
+      icon : /assets/logos/c-logo.png
     - name : Solidity
       level: 3
       icon : /assets/logos/solidity-logo.png
@@ -36,7 +36,7 @@
       level: 6
       icon : /assets/logos/mariadb-logo.png
     - name : MongoDB
-      level: 6
+      level: 5
       icon : /assets/logos/mongodb-logo.png
 - name: Web
   skills:
@@ -74,11 +74,11 @@
       level: 8
       icon : /assets/logos/git-logo.png
     - name : JUnit
-      level: 8
+      level: 7
       icon : /assets/logos/junit-logo.png
     - name : Maven
-      level: 7
+      level: 6
       icon : /assets/logos/maven-logo.png
     - name : Docker
-      level: 6
+      level: 5
       icon : /assets/logos/docker-logo.png
