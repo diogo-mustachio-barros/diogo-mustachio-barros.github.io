@@ -16,14 +16,23 @@ abstract: |
   of all publications, talks and posters produced since its first inception.
 ---
 
-<!-- 
-## Motivation
+- Old website was outdated
+  - https://rss.rd.ciencias.ulisboa.pt/ (has changed since freest's website was created)
+- we transitioned to GitHub and this website was hosted in a FCUL machine
+- we wanted for it to be more complete with information
+  - better download page
+  - tutorial page(s)
+  - FreeST standard libraries documentation
+  - team page
+  - (future) integrated TryIt page (http://gloss.di.fc.ul.pt/tryit/FreeST)
+- necessity to join RSS, TryIt and others in a single website that was easy to update
+- recreate something similar to other languages
+  - Idris - https://www.idris-lang.org/
+  - Granule - https://granule-project.github.io/
+  - Iris - https://iris-project.org/
+  - Kotlin - https://kotlinlang.org/
+  - Rust - https://www.rust-lang.org/
 
-## Design
-
-## Implementation
-
-## Demo
-
-## How to use 
--->
+- Jekyll + GitHub Pages
+- Just the Docs
+- FreeST TryIt (connect with post)
