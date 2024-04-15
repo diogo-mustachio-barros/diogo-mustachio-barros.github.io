@@ -19,3 +19,12 @@ th {
     text-align: center;
     border-bottom: 1.5px solid #000000;
 }
+
+// A fix for unicode circle symbols based of this response:
+// https://graphicdesign.stackexchange.com/questions/145734/fallback-web-fonts-for-unicode-circles
+@font-face {
+    font-family: UniCircles;
+    src: url(data:application/font-woff2;base64,d09GMgABAAAAAAJ8AA0AAAAABkgAAAIlAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cBmAAglIIBBEICoF8gUMLDgABNgIkAxQEIAWDVAcgGx4FIC4G7MblQspYm5k1jxUBoCHj8P5RxHjof792Z95fRC2LVRLJJEQilM4hJEqgVPEomtraf5fOXOED7bj7Zv+VFMAAlWYes4CHDkMQSvgbcM37ZdsaB9RUgBtGN0YjTKA7NR95G4epNp7/dWtxb0/gGYR4gaSXN1FxHF4sUat/fAU6OCxADozSbQoefbKWGOIRRBA6IeB962wGvnsFiTnVzKCUdExQkpekAVey4/hHChKkWjMAMAWA/TObH0tg/i2vHeciRIUAwBSioGAMwTaywJjCImjSJGH+cXhzH+L1F0586j5nBCAaIACRIAEAAV6nswKi7hI0gDY0Yx3sA6hASqSQlXBGm8ZgU7kUBxNYqRqP4uyk8K7d9XDb2wxeve1w3V0NOpr5+gHLIqg1+6puj7d4JzcO2uG8qC8wdyrWdQb3/186usV4oU2h8fjxgEBwfaH5PjpN/yY2+XdO/aF+UeVCQJMEQen2nUsaKFMgAKAqaWoSdoEvAQg06JKBRAhsAqDDDQJIAUKLYQSp0SqCYsETQaXFLQhquvwQNGgJKXJRMQEUoU+O1GEOxTYTKn1eqJnyoTfoCypwIinCIiLLJy4gByfnkRZx68ChgJCCOI8s9C3rA1tSkvLLN2eFBKiYSGp7de402DWLYKTAKE/wAZNdyIYCKouq93UNkd/YEsZwUw8tWJxuy8qJSElSEUkiWVXD26qWUhTG1mlvK0A9BgIAAAAA) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

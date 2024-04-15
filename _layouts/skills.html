@@ -19,7 +19,7 @@ layout: single
         <td rowspan="{{ cat.skills.size | plus: 1}}" style="text-align: center;"><h3 style="margin: auto;">{{ cat.name }}</h3></td>
         <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
         <td>
-            <p class="skill-level" style="font-size: 2em; margin: auto; font: caption">
+            <p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
                 {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
             </p>
         </td>
@@ -30,7 +30,7 @@ layout: single
     <tr>
         <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
         <td>
-            <p class="skill-level" style="font-size: 2em; margin: auto; font: caption">
+            <p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
                 {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
             </p>
         </td>
