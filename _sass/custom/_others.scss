@@ -4,8 +4,7 @@
 
 .skill-level {
     width: fit-content;
-    background-color: red;
-    background-image: linear-gradient(90deg, red 0%, green 50%, blue 100%);
+    background-image: linear-gradient(to right,rgba(87, 199, 133, 1) 10%, rgba(17, 115, 17, 1) 90%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -13,6 +12,37 @@
 
     font-size: 2em;
     margin: auto;
+}
+
+
+.recency-level {
+    width: fit-content;
+    background-image: linear-gradient(to right,rgba(87, 139, 199, 1) 30%, rgba(17, 76, 115, 1) 70%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2em;
+    margin: auto;
+}
+
+details {
+    padding: 8px;
+    border-left: 4px solid lightgray;
+}
+
+details summary {
+    cursor: pointer;
+    transition: margin 150ms ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
+
+.details-content {
+    margin: 16px 16px 0px 16px;
 }
 
 th {
