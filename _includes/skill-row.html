@@ -1,0 +1,20 @@
+<td> 
+    <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span>
+    {% if skill.tags contains "favorite" %}
+        <img src="/assets/icons/favorite.png" style="height: 1em">
+    {% endif %}
+    
+    {% if skill.tags contains "learning" %}
+        <img src="/assets/icons/learning.png" style="height: 1em">
+    {% endif %}
+</td>
+<td>
+    <p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
+        {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
+    </p>
+</td>
+<td>
+    <p class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
+        {% for i in (1..skill.recency) %}●{% endfor %}{% for i in (skill.recency..1) %}○{% endfor %}
+    </p>
+</td>

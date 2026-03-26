@@ -18,34 +18,12 @@ layout: single
         {% assign skill = cat.skills[0] %}
         <tr>
             <td rowspan="{{ cat.skills.size | plus: 1}}" style="text-align: center;"><h3 style="margin: auto;">{{ cat.name }}</h3></td>
-            <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
-            <td>
-                <p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
-                    {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
-                </p>
-            </td>
-            <td>
-                <p class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
-                    {% for i in (1..skill.recency) %}●{% endfor %}{% for i in (skill.recency..1) %}○{% endfor %}
-                </p>
-            </td>
+            {% include skill-row.html %}
         <tr>
         
         {% assign rest = cat.skills | shift %}
         {% for skill in rest %}
-            <tr>
-                <td> <img src="{{ skill.icon }}" style="height: 2em"> <span>{{ skill.name }}</span></td>
-                <td>
-                    <p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
-                        {% for i in (1..skill.level) %}●{% endfor %}{% for i in (skill.level..9) %}○{% endfor %}
-                    </p>
-                </td>
-                <td>
-                    <p class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">
-                        {% for i in (1..skill.recency) %}●{% endfor %}{% for i in (skill.recency..1) %}○{% endfor %}
-                    </p>
-                </td>
-            </tr>
+            <tr> {% include skill-row.html %} </tr>
         {% endfor %}
     {% endfor %} 
 </table>
@@ -60,27 +38,27 @@ layout: single
             </tr>
         
             <tr>
-                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●○○○○○○○○</p></td>
+                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●○○○○○○○○</p></td>
                 <td>Basic knowledge with no practical experience</td>
             </tr>
         
             <tr>
-                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●●●○○○○○○</p></td>
+                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●●●○○○○○○</p></td>
                 <td>Basic knowledge with limited practical experience</td>
             </tr>
         
             <tr>
-                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●●●●●○○○○</p></td>
+                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●●●●●○○○○</p></td>
                 <td>Working knowledge with some practical experience</td>
             </tr>
         
             <tr>
-                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●●●●●●●○○</p></td>
+                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●●●●●●●○○</p></td>
                 <td>Strong proficiency with the ability to perform tasks independently</td>
             </tr>
         
             <tr>
-                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●●●●●●●●●</p></td>
+                <td><p class="skill-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●●●●●●●●●</p></td>
                 <td>Deep expertise and ability to mentor others</td>
             </tr>
         </table>
@@ -93,17 +71,17 @@ layout: single
             </tr>
         
             <tr>
-                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">○○</td>
+                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">○○</td>
                 <td>Last used over a year ago</td>
             </tr>
         
             <tr>
-                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●○</td>
+                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●○</td>
                 <td>Last used in more than three months</td>
             </tr>
         
             <tr>
-                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;">●●</td>
+                <td class="recency-level" style="font-size: 1.4em; margin: auto; font-family: UniCircles, sans-serif;text-align: center;">●●</td>
                 <td>Used in the last three months</td>
             </tr>
         </table>
