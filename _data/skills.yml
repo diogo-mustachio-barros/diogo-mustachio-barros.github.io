@@ -10,11 +10,16 @@
 # 1 -> Used it in the last year
 # 2 -> Regular use
 
+# Tags
+# - favorite
+# - learning
+
 - name: Programming Languages
   skills:
     - name : Java
       level: 7
       recency: 2
+      tags: favorite
       icon : /assets/logos/java-logo.png
     - name : Haskell
       level: 8
@@ -23,6 +28,7 @@
     - name : Rust
       level: 6
       recency: 1
+      tags: favorite, learning
       icon : /assets/logos/rust-logo.png
     - name : Python
       level: 7
@@ -95,13 +101,14 @@
       recency: 0
       icon : /assets/logos/express-logo.png
     - name : Spring
-      level: 6
+      level: 5
       recency: 2
+      tags: learning
       icon : /assets/logos/spring-logo.png
 - name: DevOps & Tooling
   skills:
     - name : Git (GitHub and GitLab)
-      level: 8
+      level: 7
       recency: 2
       icon : /assets/logos/git-logo.png
     - name : Maven
